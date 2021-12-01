@@ -1,0 +1,251 @@
+.App {
+  overflow: hidden;
+}
+
+.background {
+  /* position: relative; */
+  filter: brightness(75%);
+  min-height: 95vh;
+  background-image: url("./media/photo-1635903486758-67c5a1ec9f06.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  z-index: -1;
+}
+
+.kodama1 {
+  position: absolute;
+  z-index: 2;
+  height: 15rem;
+  width: 15rem;
+  right: 2.25rem;
+  bottom: 1rem;
+  animation: fadeIn 12s;
+  -webkit-animation: fadeIn 12s;
+  -moz-animation: fadeIn 12s;
+  -o-animation: fadeIn 12s;
+  -ms-animation: fadeIn 12s;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+}
+
+.kodama1:hover {
+  transition: all 2s ease-in-out;
+  filter: drop-shadow(2px 2px 20px #eee);
+}
+
+.kodama2 {
+  position: absolute;
+  z-index: 3;
+  height: 15rem;
+  width: 15rem;
+  bottom: 25vh;
+  right: 40vw;
+  animation: fadeIn 18s;
+  -webkit-animation: fadeIn 18s;
+  -moz-animation: fadeIn 18s;
+  -o-animation: fadeIn 18s;
+  -ms-animation: fadeIn 18s;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+}
+
+.kodama2:hover {
+  transition: all 2s ease-in-out;
+  filter: drop-shadow(2px 2px 20px #eee);
+}
+
+.kodamaCouple {
+  position: absolute;
+  z-index: 2;
+  height: 18rem;
+  width: 18rem;
+  bottom: 29vh;
+  right: 47vw;
+  cursor: pointer;
+  animation: fadeIn 24s;
+  -webkit-animation: fadeIn 24s;
+  -moz-animation: fadeIn 24s;
+  -o-animation: fadeIn 24s;
+  -ms-animation: fadeIn 24s;
+  transition: all 2s ease-in-out;
+}
+
+.kodamaCouple:hover {
+  transition: all 2s ease-in-out;
+  filter: drop-shadow(2px 2px 20px #eee);
+}
+
+/* .kodamaCouple:hover {
+  animation: fadeIn 24s;
+  -webkit-animation: fadeIn 24s;
+  -moz-animation: fadeIn 24s;
+  -o-animation: fadeIn 24s;
+  -ms-animation: fadeIn 24s;
+} */
+
+.kodamaClicked {
+  animation: head-shake 1s linear 0s 1 normal;
+}
+
+.kodamaNotClicked:hover {
+  animation: head-bobble 10s linear 0s 1 normal;
+}
+
+.kodamaCoupleClicked {
+  animation: couple-head-shake 1s linear 0s 1 normal;
+}
+
+.kodamaCoupleNotClicked:hover {
+  animation: couple-head-bobble 10s linear 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes head-bobble {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+  50% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes couple-head-bobble {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+  50% {
+    transform: translate(0.75rem, 1.25rem) rotate(-7.48deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes head-shake {
+  0% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+  2.5% {
+    transform: translate(0) rotate(0);
+  }
+  5% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+
+  7.5% {
+    transform: translate(0) rotate(0);
+  }
+  10% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+  15% {
+    transform: translate(0) rotate(0);
+  }
+  20% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+  30% {
+    transform: translate(0) rotate(0);
+  }
+  50% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+  65% {
+    transform: translate(0) rotate(0);
+  }
+  80% {
+    transform: translate(0.75rem, -1.25rem) rotate(12.48deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes couple-head-shake {
+  0% {
+    transform: translate(0.75rem, 0.75rem) rotate(-5.48deg);
+  }
+  2.5% {
+    transform: translate(0) rotate(0);
+  }
+  5% {
+    transform: translate(0.75rem, 0.75rem) rotate(-5.48deg);
+  }
+
+  7.5% {
+    transform: translate(0) rotate(0);
+  }
+  10% {
+    transform: translate(0.5rem, 0.5rem) rotate(-5.48deg);
+  }
+  15% {
+    transform: translate(0) rotate(0);
+  }
+  20% {
+    transform: translate(0.5rem, 0.5rem) rotate(-5.48deg);
+  }
+  30% {
+    transform: translate(0) rotate(0);
+  }
+  50% {
+    transform: translate(0.5rem, 0.5rem) rotate(-5.48deg);
+  }
+  65% {
+    transform: translate(0) rotate(0);
+  }
+  80% {
+    transform: translate(0.5rem, 0.5rem) rotate(-5.48deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
