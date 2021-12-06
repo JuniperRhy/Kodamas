@@ -1,33 +1,144 @@
 .App {
   overflow: hidden;
+  animation: AppFadeIn 5s;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes AppFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .background {
   /* position: relative; */
-  filter: brightness(75%);
   min-height: 95vh;
   background-image: url("./media/photo-1635903486758-67c5a1ec9f06.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  max-height: 800px;
+  /* padding: 2rem; */
   z-index: -1;
+  animation: cloud-shadows 30s infinite forwards;
+}
+
+.contentWrapper {
+  /* position: absolute; */
+  max-width: 1280px;
+  max-height: 800px;
+  left: 50%;
+  right: 50%;
+}
+
+.KodamaBG1 {
+  z-index: 2;
+  height: 9rem;
+  width: 9rem;
+  left: 18.25rem;
+  bottom: 11rem;
+  transition: all 5s ease-in-out;
+  transition-delay: 2s;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
+  opacity: 1;
+  cursor: pointer;
+}
+.KodamaBG1:hover {
+  transition: all 5s ease-in-out;
+  transition-delay: 0.5s;
+  filter: drop-shadow(2px 2px 20px #eee);
+  opacity: 1;
+}
+
+.KodamaBG2 {
+  /* position: absolute; */
+  position: relative;
+  z-index: 2;
+  height: 8rem;
+  width: 8rem;
+
+  left: 4.25rem;
+  bottom: 15rem;
+  transition: all 5s ease-in-out;
+  transition-delay: 2s;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
+  opacity: 1;
+  cursor: pointer;
+}
+.KodamaBG2:hover {
+  transition: all 5s ease-in-out;
+  transition-delay: 0.5s;
+  filter: drop-shadow(2px 2px 20px #eee);
+  opacity: 1;
+}
+
+.KodamaBG3 {
+  /* position: absolute; */
+  position: relative;
+  z-index: 2;
+  height: 8rem;
+  width: 8rem;
+  right: 18.25rem;
+  bottom: 11rem;
+  transition: all 5s ease-in-out;
+  transition-delay: 2s;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
+  opacity: 1;
+  cursor: pointer;
+}
+.KodamaBG3:hover {
+  transition: all 5s ease-in-out;
+  transition-delay: 0.5s;
+  filter: drop-shadow(2px 2px 20px #eee);
+  opacity: 1;
+}
+
+.KodamaBG4 {
+  /* position: absolute; */
+  position: relative;
+  z-index: 2;
+
+  height: 3rem;
+  width: 3rem;
+  right: 30.25rem;
+  top: 11.5rem;
+  transition: all 5s ease-in-out;
+  transition-delay: 2s;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
+  opacity: 1;
+  cursor: pointer;
+}
+.KodamaBG4:hover {
+  transition: all 5s ease-in-out;
+  transition-delay: 0.5s;
+  filter: drop-shadow(2px 2px 20px #eee);
+  opacity: 1;
 }
 
 .kodama1 {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   z-index: 2;
-  height: 15rem;
-  width: 15rem;
-  right: 2.25rem;
-  bottom: 1rem;
-  animation: fadeIn 12s;
+  height: 12rem;
+  width: 12rem;
+  left: 40.25rem;
+  top: 40rem;
+  animation: fadeIn 12s linear 12s 1;
   -webkit-animation: fadeIn 12s;
   -moz-animation: fadeIn 12s;
   -o-animation: fadeIn 12s;
   -ms-animation: fadeIn 12s;
   cursor: pointer;
   transition: all 2s ease-in-out;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
 }
 
 .kodama1:hover {
@@ -36,19 +147,21 @@
 }
 
 .kodama2 {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   z-index: 3;
-  height: 15rem;
-  width: 15rem;
-  bottom: 25vh;
-  right: 40vw;
-  animation: fadeIn 18s;
+  height: 12rem;
+  width: 12rem;
+  right: 14.25rem;
+  top: 27rem;
+  animation: fadeIn 18s linear 10s 1;
   -webkit-animation: fadeIn 18s;
   -moz-animation: fadeIn 18s;
   -o-animation: fadeIn 18s;
   -ms-animation: fadeIn 18s;
   cursor: pointer;
   transition: all 2s ease-in-out;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
 }
 
 .kodama2:hover {
@@ -57,19 +170,21 @@
 }
 
 .kodamaCouple {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   z-index: 2;
-  height: 18rem;
-  width: 18rem;
-  bottom: 29vh;
-  right: 47vw;
+  height: 15rem;
+  width: 15rem;
+  right: 13.25rem;
+  top: 25rem;
   cursor: pointer;
-  animation: fadeIn 24s;
+  animation: fadeIn 24s linear 5s 1;
   -webkit-animation: fadeIn 24s;
   -moz-animation: fadeIn 24s;
   -o-animation: fadeIn 24s;
   -ms-animation: fadeIn 24s;
   transition: all 2s ease-in-out;
+  filter: drop-shadow(10px 35px 30px rgb(27, 27, 27));
 }
 
 .kodamaCouple:hover {
@@ -85,12 +200,87 @@
   -ms-animation: fadeIn 24s;
 } */
 
+.displayText {
+  left: 2rem;
+  top: 2rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-items: stretch;
+  font-family: Benjamin;
+}
+
+.displayText1,
+.displayText2,
+.displayText3,
+.displayText4 {
+  justify-content: stretch;
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem;
+  color: peachpuff;
+  font-size: 4rem;
+  top: 2rem;
+  list-style-type: none;
+  text-shadow: 2px 2px 10px peachpuff;
+  filter: drop-shadow(0px 0px 2px peachpuff);
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  cursor: pointer;
+}
+
+.displayText1 {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  animation: text-intro 10s linear 2s 1;
+}
+.displayText2 {
+  animation: text-intro 10s linear 4s 1;
+}
+.displayText3 {
+  animation: text-intro 10s linear 6s 1;
+}
+.displayText4 {
+  animation: text-intro 10s linear 8s 1;
+}
+
+.displaySubText {
+  left: 2rem;
+
+  position: fixed;
+  font-family: Benjamin;
+  justify-content: stretch;
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem;
+  color: peachpuff;
+  font-size: 2rem;
+  top: 8rem;
+  list-style-type: none;
+  text-shadow: 2px 2px 10px peachpuff;
+  filter: drop-shadow(0px 0px 2px peachpuff);
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  cursor: pointer;
+}
+.displaySubText {
+  animation: text-intro 15s linear 12s 1;
+}
+
+.displayText1:hover,
+.displayText2:hover,
+.displayText3:hover,
+.displayText4:hover,
+.displaySubText:hover {
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
 .kodamaClicked {
   animation: head-shake 1s linear 0s 1 normal;
 }
 
 .kodamaNotClicked:hover {
-  animation: head-bobble 10s linear 0s 1 normal;
+  animation: head-bobble 30s linear 0s 1 normal;
 }
 
 .kodamaCoupleClicked {
@@ -98,11 +288,68 @@
 }
 
 .kodamaCoupleNotClicked:hover {
-  animation: couple-head-bobble 10s linear 0s 1 normal;
+  animation: couple-head-bobble 30s linear 0s 1 normal;
+}
+@keyframes cloud-shadows {
+  0% {
+    filter: brightness(90%);
+  }
+  20% {
+    filter: brightness(75%);
+  }
+  40% {
+    filter: brightness(60%);
+  }
+  50% {
+    filter: brightness(45%);
+  }
+  60% {
+    filter: brightness(60%);
+  }
+  80% {
+    filter: brightness(75%);
+  }
+  100% {
+    filter: brightness(90%);
+  }
+}
+
+@keyframes text-intro {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@font-face {
+  font-family: Benjamin;
+  src: url(./media/BenjaminRegular.ttf);
 }
 
 @keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -114,6 +361,9 @@
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -121,6 +371,9 @@
 
 @-webkit-keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -132,6 +385,9 @@
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -139,6 +395,9 @@
 
 @-ms-keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
