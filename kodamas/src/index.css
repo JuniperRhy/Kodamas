@@ -1,9 +1,15 @@
-body {
+* {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+body {
   overflow: hidden;
-  background-color: black;
+  background-image: url("./media/bgblur.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 code {
